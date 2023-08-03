@@ -1,0 +1,330 @@
+.m-t-baza {
+  background: radial-gradient(circle at 5% 0%, rgba(136, 155, 23, 0.2) 15%, transparent 35%),
+    radial-gradient(circle at 0% 0%, rgba(144, 222, 251, 0.32) 9%, transparent 16%),
+    radial-gradient(circle at 100% 50%, rgba(216, 239, 85, 0.25) 5%, transparent 30%),
+    radial-gradient(circle at 100% 50%, rgba(144, 222, 251, 0.25) 8%, transparent 20%),
+    radial-gradient(circle at 5% 81%, rgba(216, 239, 85, 0.13) 11%, transparent 24%),
+    radial-gradient(circle at 0% 84%, rgba(144, 222, 251, 0.4) 2.5%, transparent 14%);
+}
+
+.m-t-baza__section {
+  margin-bottom: 50px;
+}
+
+.m-t-baza img {
+}
+
+.m-t-baza__full-width-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.m-t-baza__title {
+  margin-bottom: 10px;
+}
+
+.mt-baza__panorama-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: var(--gray-color);
+  text-align: center;
+}
+
+.mt-baza__panorama-item {
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.mt-baza__panorama-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.m-t-baza__subtitle {
+  margin: 30px 0 15px 0;
+}
+
+.m-t-baza__table {
+  margin-top: 20px;
+}
+
+/* m-t-baza2 */
+.mt-baza2__row {
+  display: flex;
+}
+
+.mt-baza2__col-1-4 {
+  width: 25%;
+}
+.mt-baza2__col-2-4 {
+  padding: 60px;
+  width: 50%;
+}
+
+.mt-baza2__col-1-5 {
+  width: 20%;
+}
+.mt-baza2__col-4-5 {
+  width: 80%;
+}
+
+.mt-baza2__left {
+  background: rgb(255, 248, 238);
+  background: rgb(255, 190, 223);
+}
+.mt-baza2__content {
+}
+.mt-baza2__right {
+  background: rgb(120, 148, 255);
+}
+
+.mt-baza2__virtual-tour-title {
+  font-family: GilroyBold, sans-serif;
+  color: var(--primary-color);
+  transform: rotate(270deg);
+  font-size: 32px;
+  text-align: center;
+}
+
+.mt-baza2__virtual-tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.mt-baza__virtual-tour {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.mt-baza__virtual-tour-item {
+  margin: 20px;
+  max-width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/*  */
+.mt-baza2__col-photo {
+  padding: 0;
+  background-image: url('../../images/m-t-baza/02-layer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mt-baza2__col-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mt-baza2__col-desc {
+  background-color: rgb(119, 113, 214);
+  color: #ffffff;
+}
+
+.mt-baza2__col-desc h3 {
+  font-family: GilroyRegular, sans-serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* red */
+.mt-baza2__red {
+  background-color: rgb(245, 101, 84);
+}
+
+.mt-baza2__red-content {
+  background: rgb(255, 248, 238);
+  /* max-width: 70%; */
+  padding: 40px;
+}
+
+/*  */
+
+.mt-baza2__purple {
+  background-image: url('../../images/m-t-baza/011-layer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* 333333333333333333333 */
+/* 333333333333333333333 */
+/* 333333333333333333333 */
+
+.mt-baza3__title {
+  padding: 60px 0;
+  border-bottom: 5px solid var(--primary-color);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.mt-baza3__box {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.mt-baza3-1-2 + .mt-baza3-1-2 {
+  margin-left: 40px;
+}
+
+.mt-baza3-1-2 {
+  width: 50%;
+}
+
+/* panorama */
+
+.mt-baza3__panorama {
+}
+
+.mt-baza3__panorama-title {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--gray-color);
+}
+
+.mt-baza3__panorama-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mt-baza3__panorama-item {
+  max-width: 300px;
+  overflow: hidden;
+}
+
+/* 4444444444444444444444444444444444 */
+/* 4444444444444444444444444444444444 */
+/* 4444444444444444444444444444444444 */
+/* 4444444444444444444444444444444444 */
+/* 4444444444444444444444444444444444 */
+
+.mt-baza4 {
+  padding: 100px 0;
+}
+
+.mt-baza4__row {
+  margin-bottom: 100px;
+  width: 80%;
+  color: #fff;
+  padding: 40px;
+  background: linear-gradient(90deg, var(--primary-color) 80%, #0084ff 100%);
+  /* background-color: var(--primary-color); */
+  position: relative;
+}
+.mt-baza4__row--left {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.mt-baza4__row--right {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  margin-left: auto;
+}
+
+.mt-baza4__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-baza4__content {
+  margin-left: 40px;
+}
+
+.mt-baza4__title {
+  font-family: GilroyBold, sans-serif;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.mt-baza4__text {
+  font-family: GilroyRegular, sans-serif;
+  font-size: 20px;
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+
+.mt-baza4__img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+
+/* virtual tour */
+
+.mt-baza4__virtual-tour {
+  padding: 40px 0;
+  /* background: linear-gradient(90deg, var(--primary-color) 80%, #0084ff 100%); */
+  background-color: var(--primary-color);
+  margin-bottom: 80px;
+}
+
+.mt-baza4__virtual-tour-title {
+  font-family: GilroyBold, sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mt-baza4__virtual-tour-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 80px;
+}
+
+.mt-baza4__virtual-tour-item {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 200px;
+  height: 200px;
+}
+
+.mt-baza4__panorama-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+/*  */
+.mt-baza5__box-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mt-baza5__title {
+  font-family: GilroyBold, sans-serif;
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.mt-baza5__text {
+  font-family: GilroyRegular, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mt-baza5__img {
+  margin: 0 40px;
+  width: 500px;
+  height: 400px;
+  border-radius: 10%;
+  object-fit: cover;
+}

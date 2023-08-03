@@ -1,0 +1,45 @@
+.stats {
+  margin-bottom: 100px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 40px;
+}
+
+.stats__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.stats__item {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  padding: 0 40px;
+  align-items: center;
+  max-width: 300px;
+}
+
+.stats__item-inner{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats__item:not(:first-child) {
+  border-left: 1px solid #ffffff;
+  /* border-right: 1px solid #ffffff; */
+}
+
+.stats__number {
+  font-family: 'GilroyBold', sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.stats__text {
+  font-family: 'GilroyRegular', sans-serif;
+  text-align: center;
+}

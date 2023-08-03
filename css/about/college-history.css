@@ -1,0 +1,64 @@
+.college-history {
+}
+
+.college-history__directors-title {
+}
+
+.college-history__gallery {
+  display: flex;
+}
+
+.college-history__image-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+}
+
+.college-history__image-box::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #2e79b294;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.college-history__image-box::before {
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../../images/icons/search-gold.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  opacity: 0;
+}
+
+.college-history__image-box:hover::after,
+.college-history__image-box:hover::before {
+  opacity: 1;
+}
+
+.college-history__image-box:hover img {
+  transform: scale(1.1);
+}
+
+.college-history__image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}

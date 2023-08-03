@@ -1,0 +1,110 @@
+.header {
+  /* background-color: #002248; */
+  /* background-color: var(--primary-color); */
+}
+
+/* .header__top-link span,
+.social__wrapper p,
+.header__nav-item a {
+  color: #000;
+}
+
+.social__list-item,
+.header__eng-icon {
+  border: 3px solid #000;
+}
+.header__top {
+  border-bottom: 2px solid #000;
+}
+
+.triangle {
+  border-top-color: #000 !important;
+} */
+
+/* // header */
+
+.sub-header {
+  height: 390px;
+  /* height: 250px; */
+  width: 100%;
+  position: relative;
+  /* top: -140px; */
+  text-align: center;
+  /* background-image: url('../../images/header/header-bg-v2.png'); */
+  /* background-image: url('../../images/header/header-second-bg-large.png'); */
+  /* background-image: url('../../images/header/Безымянный1.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sub-header::before {
+  /* top: -100px; */
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 0px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* background: linear-gradient(0deg, rgba(0, 56, 140, 0.3) 25%, rgba(0, 56, 140, 0.35) 80%, rgba(0, 56, 140, 0.4) 100%); */
+  /* background: linear-gradient(0deg, rgba(0, 102, 255, 0) 25%, rgba(0, 56, 140, 0.4) 80%, rgba(0, 0, 0, 0.7) 100%); */
+  background: linear-gradient(0deg, rgba(0, 56, 140, 0.15) 25%, rgba(0, 56, 140, 0.4) 80%, rgba(0, 56, 140, 0.5) 100%);
+  /* opacity: 0.5; */
+  z-index: 1;
+}
+
+.sub-header__inner {
+  padding-top: 170px;
+  display: flex;
+  align-items: center;
+  /* height: 250px; */
+}
+
+.sub-header__title {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-family: 'GilroyBold', sans-serif;
+  position: relative;
+  text-align: left;
+  font-size: 40px;
+  color: #fff;
+  z-index: 2;
+  max-width: 65%;
+}
+
+.sub-header__logo-box {
+  margin: 0 35px;
+  position: relative;
+  z-index: 1;
+  max-width: 160px;
+}
+
+.sub-header__logo {
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-header__logo:hover {
+  transform: scale(1.1);
+}
+
+/* video */
+
+.sub-header__video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.sub-header__video video {
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  min-width: 100%;
+}

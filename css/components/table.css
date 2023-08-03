@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  font-family: 'GilroyRegular', sans-serif;
+  border-collapse: collapse;
+  font-size: 17px;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+td ul {
+  margin-left: 20px;
+}
+
+td ul li {
+  padding-left: 0px;
+  list-style: disc;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--gray-color);
+}

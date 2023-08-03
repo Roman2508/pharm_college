@@ -1,0 +1,160 @@
+.news {
+  padding: 90px 0 180px;
+  background-color: #f2f4fd;
+  position: relative;
+}
+
+.news::before,
+.news::after {
+  position: absolute;
+  left: 50%;
+  content: '';
+  transform: translateX(-50%);
+  height: 55px;
+  width: 480px;
+  background-repeat: no-repeat;
+}
+
+.news::before {
+  top: -55px;
+  background-image: url('../images/bg/section-bg-1.png');
+  background-repeat: no-repeat;
+}
+
+.news::after {
+  bottom: 0px;
+  background-image: url('../images/bg/section-bg-3.png');
+  background-repeat: no-repeat;
+}
+
+.news__wrapper {
+  position: relative;
+}
+
+.news__title {
+  color: #353f4f;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -130px;
+}
+
+.news__items,
+.news__left-items {
+  display: flex;
+  justify-content: space-between;
+}
+.news__left {
+  flex: 1;
+}
+
+.news__left-items {
+  margin-right: 30px;
+}
+
+.news__item {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.news__bg {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.news__item-title {
+  position: absolute;
+  bottom: 50px;
+  font-family: GilroyBold, sans-serif;
+  font-size: 24px;
+  z-index: 10;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.news__item-date {
+  font-family: GilroyRegular, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+}
+
+/* pagination */
+
+.news__pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.news__pagination span {
+  font-family: GilroyBold;
+  color: #002248;
+  /* color: #0066ff; */
+}
+
+.news__selected-page {
+  color: var(--primary-color) !important;
+  /* color: #000 !important; */
+  cursor: default !important;
+}
+
+.news__all-news {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.news__pagination-item {
+  user-select: none;
+  cursor: pointer;
+}
+
+.news__pagination span + span {
+  margin-left: 10px;
+}
+
+/* events */
+
+.news__events {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  bottom: 20px;
+}
+
+.news__events-title {
+  bottom: 80px;
+}
+
+.news__events-date {
+  font-family: GilroyRegular, sans-serif;
+}
+
+.news__events img {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+}
+
+.news__events img:last-of-type {
+  transform: rotate(180deg);
+}

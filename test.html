@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper" id="scroll-top">
+      <header class="header">
+        <div class="header__menu">
+          <div class="header__logo">
+            <img class="header__main-logo" src="./images/icons/logo_white.svg" alt="logo" />
+          </div>
+
+          <div class="header__actions">
+            <div class="header__actions-item">
+              <img class="header__actions-icon" src="./images/icons/cloud-white.png" alt="cloud icon" />
+              <span>Вхід до хмари</span>
+            </div>
+
+            <div class="header__actions-item">
+              <img class="header__actions-icon" src="./images/icons/education-white.png" alt="education" />
+              <span>Дистанційне навчання</span>
+            </div>
+
+            <div class="header__actions-item">
+              <svg class="header__search-icon" viewBox="0 0 512.000000 512.000000">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                  <path
+                    d="M1940 5079 c-493 -25 -971 -242 -1334 -605 -295 -295 -496 -674 -570
+-1075 -168 -910 277 -1807 1104 -2228 454 -231 994 -284 1489 -145 177 50 429
+163 557 252 l59 40 605 -602 c546 -545 611 -606 670 -635 305 -147 651 109
+591 437 -24 130 -23 129 -680 786 l-608 608 82 161 c138 272 201 499 226 802
+44 550 -154 1119 -535 1533 -193 211 -404 365 -661 484 -154 71 -211 92 -354
+128 -214 54 -401 71 -641 59z m355 -684 c555 -91 1005 -512 1133 -1060 108
+-461 -25 -943 -353 -1284 -270 -280 -622 -431 -1007 -431 -371 0 -721 146
+-987 411 -196 197 -323 433 -383 712 -31 146 -31 399 1 546 82 384 296 696
+621 906 166 108 344 172 570 208 66 11 323 6 405 -8z"
+                  />
+                </g>
+              </svg>
+
+              <span>Пошук</span>
+            </div>
+
+            <div class="header__actions-item">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28.000000pt"
+                height="28.000000pt"
+                viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                  <path
+                    d="M1456 4340 c-107 -33 -185 -152 -173 -265 9 -89 61 -165 142 -208
+l40 -22 1735 0 1735 0 40 22 c92 49 139 127 140 228 0 102 -48 183 -138 232
+-30 17 -129 18 -1762 20 -952 1 -1743 -2 -1759 -7z"
+                  />
+                  <path
+                    d="M200 2809 c-90 -18 -182 -113 -196 -204 -10 -67 3 -129 39 -182 42
+-62 99 -101 167 -113 37 -7 843 -9 2385 -8 2110 3 2333 5 2365 19 52 24 97 65
+128 118 23 39 27 57 27 121 0 64 -4 82 -27 121 -31 53 -76 94 -128 118 -32 15
+-254 16 -2375 17 -1325 1 -2360 -2 -2385 -7z"
+                  />
+                  <path
+                    d="M2479 1266 c-222 -79 -234 -378 -19 -475 44 -20 59 -21 1246 -21
+1337 0 1256 -4 1332 69 57 56 77 104 77 186 -1 52 -6 81 -22 111 -31 58 -104
+119 -158 133 -68 17 -2407 15 -2456 -3z"
+                  />
+                </g>
+              </svg>
+
+              <span>Меню</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <ul class="header__social">
+          <li class="header__social-item">
+            <a href="#">
+              <img class="social__list-icon" src="./images/icons/youtube-white.png" />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#">
+              <img class="social__list-icon" src="./images/icons/facebook-white.png" />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#">
+              <img class="social__list-icon" src="./images/icons/instagram-white.png" />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#">
+              <img class="social__list-icon" src="./images/icons/email-white.png" />
+            </a>
+          </li>
+          <li class="header__social-item">
+            <a href="#">
+              <img class="social__list-icon" src="./images/icons/telegram-white.png" />
+            </a>
+          </li>
+        </ul> -->
+
+        <!-- <img class="header__main-logo" src="./images/icons/logo_white.svg" alt="logo" /> -->
+      </header>
+
+      <div class="main-slider">
+        <div class="main-slider-video">
+          <h1 class="header__title">Житомирський базовий фармацевтичний фаховий коледж</h1>
+
+          <video poster="./images/top-slider/bg-poster.jpg" autoplay muted loop playsinline>
+            <source src="./videos/bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- <div class="main-slider__content">
+          <h1 class="main-slider__title">ЖИТОМИРСЬКИЙ БАЗОВИЙ ФАРМАЦЕВТИЧНИЙ ФАХОВИЙ КОЛЕДЖ</h1>
+          <img class="main-slider__logo" src="./images/icons/logo_white.svg" alt="logo" />
+        </div> -->
+      </div>
+
+      <div class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__image">
+              <img src="./images/about/about-us.jpg" alt="college photo" />
+            </div>
+
+            <div class="about__content">
+              <h2>Про ЖБФК</h2>
+              <p>
+                Житомирський базовий фармацевтичний фаховий коледж - один з найкращих освітніх центрів поліського
+                регіону і всієї України.
+              </p>
+              <p>
+                Коледж є базовим з питань навчально-методичної роботи для вищих медичних, фармацевтичних навчальних
+                закладів, які здійснюють підготовку фврмацевтів в Україні.
+              </p>
+              <p>
+                Житомирський базовий фармацевтичний фаховий коледж - це потужний кадровий потенціал, міцна
+                матеріально-технічна база, конкурентоспроможність фахівців на ринку праці.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news overhung-rectangle rectangle-gray">
+        <div class="container">
+          <div class="news__wrapper">
+            <h2 class="news__title section-title">НОВИНИ ТА ПОДІЇ</h2>
+
+            <div class="news__items">
+              <div class="news__left">
+                <div class="news__left-items">
+                  <a class="news__item item-overlay" href="#">
+                    <img class="news__bg" src="./images/events/news-1.jpg" alt="event" />
+                    <h4 class="news__item-title">ПІДПИСАНО ДОГОВІР ПРО ПАРТНЕРСТВО З МЕРЕЖЕЮ АПТЕК БАЖАЄМО ЗДОРОВ'Я</h4>
+                    <p class="news__item-date">26 Червня 2023</p>
+                  </a>
+
+                  <a class="news__item item-overlay" href="#">
+                    <img class="news__bg" src="./images/events/news-2.jpg" alt="event" />
+                    <h4 class="news__item-title">
+                      Відбулося засідання з обговорення проєкту ОПП Фармація (ОПС фаховий молодший бакалавр)
+                    </h4>
+                    <p class="news__item-date">25 Червня 2023</p>
+                  </a>
+
+                  <a class="news__item item-overlay" href="#">
+                    <img class="news__bg" src="./images/events/news-3.jpg" alt="event" />
+                    <h4 class="news__item-title">
+                      Відбулося засідання з обговорення проєкту ОПП Фармація (ОПС фаховий молодший бакалавр)
+                    </h4>
+                    <p class="news__item-date">25 Червня 2023</p>
+                  </a>
+                </div>
+
+                <div class="news__pagination">
+                  <span class="news__pagination-item">< Перша</span>
+                  <span class="news__pagination-item">< Попередня</span>
+                  <span>
+                    <span class="news__pagination-item">1</span>
+                    <span>|</span>
+                    <span class="news__selected-page">2</span>
+                    <span>|</span>
+                    <span class="news__pagination-item">3</span>
+                    <span>...</span>
+                  </span>
+                  <span class="news__pagination-item">Наступна ></span>
+                  <span class="news__pagination-item">Остання ></span>
+                  <span class="news__all-news">Всі новини</span>
+                </div>
+              </div>
+
+              <div class="news__item item-overlay not-show">
+                <img class="news__bg" src="./images/events/events.jpg" alt="event" />
+                <h4 class="news__item-title news__events-title">Тренінг з написання мотиваційного листа</h4>
+                <div class="news__events">
+                  <img src="./images/icons/arrow.png" alt="arrow" />
+                  <p class="news__events-date">25 Червня 2023</p>
+                  <img src="./images/icons/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery overhung-rectangle rectangle-white">
+        <div class="container">
+          <div class="gallery__wrapper">
+            <h2 class="gallery__title section-title">ГАЛЕРЕЯ ТА ВІДЕО</h2>
+
+            <div class="news__row">
+              <div class="gallery__items">
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-1.jpg" alt="event" />
+                  <h4 class="news__item-title">Освітній процес</h4>
+                </a>
+
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-2.jpg" alt="event" />
+                  <h4 class="news__item-title">Профорієнтаційна робота</h4>
+                </a>
+
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-3.jpg" alt="event" />
+                  <h4 class="news__item-title">Загальноколеджні заходи</h4>
+                </a>
+
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-4.jpg" alt="event" />
+                  <h4 class="news__item-title">Спортивні заходи</h4>
+                </a>
+
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-5.jpg" alt="event" />
+                  <h4 class="news__item-title">Наші студенти</h4>
+                </a>
+
+                <a class="news__item item-overlay" href="#">
+                  <img class="news__bg" src="./images/new-gallery/gallery-6.jpg" alt="event" />
+                  <h4 class="news__item-title">Наші працівники</h4>
+                </a>
+              </div>
+
+              <div class="video__items">
+                <a class="news__item item-overlay not-show" href="#">
+                  <img class="video-play" src="./images/icons/play.png" alt="video play icon" />
+                  <img class="news__bg" src="./images/gallery/video-1.jpg" alt="event" />
+                  <h4 class="news__item-title">Фарм коледж - День вчителя</h4>
+                </a>
+
+                <a class="news__item item-overlay not-show" href="#">
+                  <img class="video-play" src="./images/icons/play.png" alt="video play icon" />
+                  <img class="news__bg" src="./images/gallery/video-2.png" alt="event" />
+                  <h4 class="news__item-title">Наш коледж</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="new-gallery">
+        <div class="container">
+          <div class="new-gallery__inner">
+            <h2 class="new-gallery__title section-title">ГАЛЕРЕЯ</h2>
+            <div class="new-gallery__items">
+              <a class="new-gallery__item new-gallery__item--large" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-1.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Освітній процес</h4>
+              </a>
+              <a class="new-gallery__item new-gallery__item--small" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-2.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Профорієнтаційна робота</h4>
+              </a>
+              <a class="new-gallery__item new-gallery__item--medium" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-3.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Загальноколеджні заходи</h4>
+              </a>
+              <a class="new-gallery__item new-gallery__item--medium" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-4.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Спортивні заходи</h4>
+              </a>
+              <a class="new-gallery__item new-gallery__item--small" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-5.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Наші студенти</h4>
+              </a>
+              <a class="new-gallery__item new-gallery__item--large" href="#">
+                <img class="new-gallery__item-img" src="./images/new-gallery/gallery-6.jpg" alt="event" />
+                <h4 class="new-gallery__item-title">Наші працівники</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="videos">
+        <div class="container">
+          <div class="videos__inner">
+            <h2 class="videos__title section-title">Відео</h2>
+            <div class="videos__content">
+              <div class="videos__description">
+                <h3 class="videos__description-title">Фарм Коледж - День Вчителя</h3>
+                <p class="videos__description-text">
+                  В 1994 році ЮНЕСКО оголосило Всесвітній день вчителя офіційним святом, яке щорічно відзначається 5
+                  жовтня у більше, ніж ста країнах світу. Традиційно святкують його і в Житомирському базовому
+                  фармацевтичному коледжі ім. Г.С. Протасевича. У цей день у фойє коледжу була розгорнута виставка
+                  творчих робіт студентів і викладачів. На ній були представлені квіткові композиції, картини, вишиванки
+                  та різні інші вироби.
+                </p>
+              </div>
+              <div class="videos__item">
+                <img class="videos__item-img" src="./images/gallery/video-4.png" alt="video-bg" />
+                <img class="videos__item-play" src="./images/icons/play.png" alt="video-bg" />
+              </div>
+            </div>
+
+            <div class="videos__slider-actions">
+              <div class="videos__slider-back videos__slider-arrow">
+                <img src="./images/icons/arrow-left.svg" alt="arrow-left" />
+              </div>
+              <div class="videos__slider-slides">
+                <span class="videos__slider-current">1</span>
+                <span class="videos__slider-slash">/</span>
+                <span class="videos__slider-total">3</span>
+              </div>
+              <div class="videos__slider-next videos__slider-arrow">
+                <img src="./images/icons/arrow-right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-block">
+        <div class="container">
+          <div class="slider-block__blur"></div>
+          <div class="slider-block__inner">
+            <div class="slider-block__content">
+              <div class="slider-block__title">До уваги вступників після 9 класу</div>
+              <div class="slider-block__text">
+                Продовжено термін подачі заяв до 20 липня спеціальності фармація, промислова фармація та технології
+                медичної діагностики та лікування
+              </div>
+            </div>
+            <div class="slider-block__dots">
+              <div class="slider-block__dots-item"></div>
+              <div class="slider-block__dots-item slider-block__dots-active"></div>
+              <div class="slider-block__dots-item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__wrapper">
+            <!-- <div class="contacts__wrapper overhung-rectangle rectangle-gray"> -->
+            <div class="contacts__title section-title">КОНТАКТИ</div>
+
+            <div class="contacts__row">
+              <div class="contacts__items">
+                <div class="contact__item">
+                  <h6 class="contact__item-position">Директор</h6>
+                  <h5 class="contact__item-name">Бойчук Ірина Дмитрівна</h5>
+                  <a class="contact__item-tel" href="tel:0412242545">(0412) 24-25-45</a>
+                  <a class="contact__item-email" href="mailto:boychuck.iryna@pharm.zt.ua">boychuck.iryna@pharm.zt.ua</a>
+                </div>
+
+                <div class="contact__item">
+                  <h6 class="contact__item-position">Головний бухгалтер</h6>
+                  <h5 class="contact__item-name">Мороко Марія Іванівна</h5>
+                  <a class="contact__item-tel" href="tel:0412242546">(0412) 24-25-46</a>
+                  <a class="contact__item-email" href="mailto:moroko.maria@pharm.zt.ua">moroko.maria@pharm.zt.ua</a>
+                </div>
+
+                <div class="contact__item">
+                  <h6 class="contact__item-position">Заступник директора з навчальної роботи</h6>
+                  <h5 class="contact__item-name">Болух Віра Андріївна</h5>
+                  <a class="contact__item-tel" href="tel:0412244589">(0412) 24-45-89</a>
+                  <a class="contact__item-email" href="mailto:bolukh.vira@pharm.zt.ua">bolukh.vira@pharm.zt.ua</a>
+                </div>
+
+                <div class="contact__item">
+                  <h6 class="contact__item-position">Відповідальний секретар приймальної комісії</h6>
+                  <h5 class="contact__item-name">Ренькас Людмила Едуардівна</h5>
+                  <a class="contact__item-tel" href="tel:0980760223">(098)076-02-23</a>
+                  <a class="contact__item-email" href="mailto:renkas.liudmyla@pharm.zt.ua"
+                    >renkas.liudmyla@pharm.zt.ua</a
+                  >
+                </div>
+              </div>
+
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6291.689037301852!2d28.64056024719695!3d50.244635952177546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c648aed44e5cf%3A0x8c8080cc023799b!2z0JbQuNGC0L7QvNC40YDRgdGM0LrQuNC5INCx0LDQt9C-0LLQuNC5INGE0LDRgNC80LDRhtC10LLRgtC40YfQvdC40Lkg0YTQsNGF0L7QstC40Lkg0LrQvtC70LXQtNC2INCW0LjRgtC-0LzQuNGA0YHRjNC60L7RlyDQvtCx0LvQsNGB0L3QvtGXINGA0LDQtNC4!5e0!3m2!1sru!2sua!4v1688215841222!5m2!1sru!2sua"
+                  width="700"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="container">
+          <div class="partners__wrapper">
+            <div class="section-title">Наші партнери</div>
+
+            <div class="partners__items">
+              <div class="partners__items-row">
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-1.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-2.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-3.jpg" alt="partner logo" />
+                </a>
+              </div>
+
+              <div class="partners__items-row">
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-4.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-5.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-6.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-7.jpg" alt="partner logo" />
+                </a>
+              </div>
+              <div class="partners__items-row">
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-8.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-9.jpeg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-10.png" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-11.png" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-12.jpg" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-13.png" alt="partner logo" />
+                </a>
+                <a href="#">
+                  <img class="partners__item" src="./images/partners/partners-14.png" alt="partner logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__left-col">
+              <div class="footer__map">
+                <a href="#">
+                  <img src="./images/footer/map.png" alt="map" />
+                </a>
+              </div>
+              <div class="footer__address">
+                <h6>ЖБФФК</h6>
+                <p>вул. Чуднівська, 99</p>
+                <p>м. Житомир</p>
+                <p>10005 Україна</p>
+              </div>
+            </div>
+
+            <a class="footer__logo" href="#">
+              <img src="./images/footer/blue-logo.png" alt="logo" />
+            </a>
+
+            <div class="footer__right-col">
+              <div class="footer__contacts">
+                <a href="tel:0412242547">Тел.: (0412) 24-25-47</a>
+                <a href="tel:0412242545">Факс: (0412) 24-25-45</a>
+                <a href="mailto:college@pharm.zt.ua">college@pharm.zt.ua</a>
+              </div>
+
+              <div class="footer__social">
+                <ul class="social__list">
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="./images/icons/youtube.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="./images/icons/facebook.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="./images/icons/instagram.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="./images/icons/email.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="./images/icons/telegram.png" />
+                    </a>
+                  </li>
+                </ul>
+
+                <button class="footer__button">Задати питання</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const headerEl = document.getElementById('header-nav')
+      const sliderImg = document.getElementById('slider-img')
+
+      let index = 2
+
+      window.addEventListener('scroll', function (e) {
+        const scrollSize = window.pageYOffset
+
+        if (scrollSize > 82) {
+          headerEl.style.top = '0'
+          headerEl.style.position = 'fixed'
+          headerEl.style.backgroundColor = 'rgba(255, 255, 255, .8)'
+          headerEl.style.backdropFilter = 'blur(20px)'
+          headerEl.style.color = '#000'
+          // headerEl.style.color = '#1d222f'
+          // headerEl.style.backgroundColor = '#002248'
+          headerEl.style.boxShadow = '0px 10px 8px -6px rgba(34, 60, 80, 0.2)'
+        } else {
+          headerEl.style.top = '80px'
+          headerEl.style.color = '#ffffff'
+          headerEl.style.backdropFilter = 'none'
+          headerEl.style.backgroundColor = '#ffffff00'
+          headerEl.style.position = 'relative'
+          headerEl.style.boxShadow = 'none'
+        }
+      })
+
+      setInterval(() => {
+        switchPhoto('right')
+      }, 4000)
+
+      const switchPhoto = (side) => {
+        if (side === 'right') {
+          index++
+          if (index > 5) index = 1
+        }
+
+        if (side === 'left') {
+          index--
+          if (index == 0) index = 5
+        }
+
+        const path = './images/top-slider/slider0' + index + '.jpg'
+        sliderImg.src = path
+      }
+    </script>
+  </body>
+</html>

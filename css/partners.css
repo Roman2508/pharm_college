@@ -1,0 +1,23 @@
+.partners {
+  margin-bottom: 100px;
+}
+
+.partners__items {
+  margin-top: 30px;
+}
+
+.partners__items-row {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.partners__items-row a img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.partners__items-row a:hover img {
+  transform: scale(1.1);
+}
