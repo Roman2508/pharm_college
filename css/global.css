@@ -216,13 +216,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('../images/icons/search-gold.svg');
+  /* background-image: url('../images/icons/search-gold.svg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   opacity: 0;
+}
+
+.hand-pointer.scale-photo-hover::before {
+  background-image: url('../images/icons/hand-pointer.svg');
 }
 
 .scale-photo-hover:hover::before,
@@ -247,4 +251,11 @@ body {
   height: 1px;
   width: 40%;
   bottom: 0;
+}
+
+.photo-element {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }

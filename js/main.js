@@ -75,6 +75,8 @@ window.addEventListener('scroll', function (e) {
   }
 })
 
+/* select */
+
 const select = function () {
   const selectHeader = document.querySelectorAll('.select__head')
   const selectItem = document.querySelectorAll('.select__item')
@@ -98,13 +100,156 @@ const select = function () {
 
 select()
 
-const fancyboxOptions = {
-  hideScrollbar: false,
-  animated: false,
-  contentClick: 'toggleZoom',
-  groupAll: true,
+/* // select */
+
+/* image gallery */
+
+// const fancyboxOptions = {
+//   hideScrollbar: false,
+//   animated: false,
+//   contentClick: 'toggleZoom',
+//   groupAll: true,
+// }
+
+// Fancybox.bind('#gallery1 a', fancyboxOptions)
+
+// Fancybox.bind('#gallery2 a', fancyboxOptions)
+
+/* // image gallery */
+
+/* accordion */
+const accordionsArray = document.querySelectorAll('[data-accordion]')
+
+if (accordionsArray.length > 0) {
+  const accordionsRegular = Array.from(accordionsArray) /* .filter(function (el) {
+    return !el.dataset.accordion.split(',')[0]
+  }) */
+
+  if (accordionsRegular.length > 0) {
+    initAccordions(accordionsRegular)
+  }
+
+  function initAccordions(accordionsArray) {
+    accordionsArray.forEach((el) => {
+      el.classList.add('accordion-init')
+      initAccordionBody(el)
+      el.addEventListener('click', setSpoilerAction)
+    })
+  }
+
+  function initAccordionBody(accrodionBlock) {
+    const accrodionTitles = accrodionBlock.querySelectorAll('[data-accordion-item]')
+
+    if (accrodionTitles.length > 0) {
+      accrodionTitles.forEach((el) => {
+        el.removeAttribute('tabindex')
+
+        if (!el.classList.contains('accordion-active')) {
+          el.nextElementSibling.hidden = true
+        }
+      })
+    }
+  }
+
+  function setSpoilerAction(e) {
+    const el = e.target
+
+    if (el.hasAttribute('data-accordion-item') || el.closest('[data-accordion-item]')) {
+      const accordionTitle = el.hasAttribute('data-accordion-item') ? el : el.closest('[data-accordion-item]')
+      const accordionBlock = accordionTitle.closest('[data-accordion]')
+      const oneSpoiler = accordionBlock.hasAttribute('data-one-accordion') ? true : false
+
+      if (!accordionBlock.querySelectorAll('._slide').length) {
+        if (oneSpoiler && !accordionTitle.classList.contains('accordion-active')) {
+          hideAccordionBody(accordionBlock)
+        }
+
+        accordionTitle.classList.toggle('accordion-active')
+        _slideToggle(accordionTitle.nextElementSibling, 500)
+      }
+      e.preventDefault()
+    }
+  }
+
+  function hideAccordionBody(accordionBlock) {
+    const accordionActiveTitle = accordionBlock.querySelector('[data-accordion-item].accordion-active')
+
+    if (accordionActiveTitle) {
+      accordionActiveTitle.classList.remove('accordion-active')
+      _slideUp(accordionActiveTitle.nextElementSibling, 500)
+    }
+  }
+
+  /*  */
 }
 
-Fancybox.bind('#gallery1 a', fancyboxOptions)
+function _slideUp(target, duration = 500) {
+  if (!target.classList.contains('_slide')) {
+    target.classList.add('_slide')
+    target.style.transitionProperty = 'height, margin, padding'
+    target.style.transitionDuration = duration + 'ms'
+    target.style.height = target.offsetHeight + 'px'
+    target.offsetHeight
+    target.style.overflow = 'hidden'
+    target.style.height = '0'
+    target.style.paddingTop = '0'
+    target.style.paddingBottom = '0'
+    target.style.marginTop = '0'
+    target.style.marginBottom = '0'
+    window.setTimeout(() => {
+      target.hidden = true
+      target.style.removeProperty('height')
+      target.style.removeProperty('padding-top')
+      target.style.removeProperty('padding-bottom')
+      target.style.removeProperty('margin-top')
+      target.style.removeProperty('margin-bottom')
+      target.style.removeProperty('overflow')
+      target.style.removeProperty('transition-duration')
+      target.style.removeProperty('transition-property')
+      target.classList.remove('_slide')
+    }, duration)
+  }
+}
 
-Fancybox.bind('#gallery2 a', fancyboxOptions)
+function _slideDown(target, duration = 500) {
+  if (!target.classList.contains('_slide')) {
+    target.classList.add('_slide')
+    if (target.hidden) {
+      target.hidden = false
+    }
+    let height = target.offsetHeight
+
+    target.style.overflow = 'hidden'
+    target.style.height = '0'
+    target.style.paddingTop = '0'
+    target.style.paddingBottom = '0'
+    target.style.marginTop = '0'
+    target.style.marginBottom = '0'
+    target.offsetHeight
+    target.style.transitionProperty = 'height, margin, padding'
+    target.style.transitionDuration = duration + 'ms'
+    target.style.height = height + 'px'
+
+    target.style.removeProperty('padding-top')
+    target.style.removeProperty('padding-bottom')
+    target.style.removeProperty('margin-top')
+    target.style.removeProperty('margin-bottom')
+
+    window.setTimeout(() => {
+      target.style.removeProperty('height')
+      target.style.removeProperty('overflow')
+      target.style.removeProperty('transition-duration')
+      target.style.removeProperty('transition-property')
+      target.classList.remove('_slide')
+    }, duration)
+  }
+}
+
+function _slideToggle(target, duration = 500) {
+  if (target.hidden) {
+    return _slideDown(target, duration)
+  } else {
+    return _slideUp(target, duration)
+  }
+}
+/* // accordion */

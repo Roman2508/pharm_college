@@ -1,38 +1,11 @@
-.header {
-  /* background-color: #002248; */
-  /* background-color: var(--primary-color); */
-}
-
-/* .header__top-link span,
-.social__wrapper p,
-.header__nav-item a {
-  color: #000;
-}
-
-.social__list-item,
-.header__eng-icon {
-  border: 3px solid #000;
-}
-.header__top {
-  border-bottom: 2px solid #000;
-}
-
-.triangle {
-  border-top-color: #000 !important;
-} */
-
 /* // header */
 
 .sub-header {
   height: 390px;
-  /* height: 250px; */
   width: 100%;
   position: relative;
-  /* top: -140px; */
   text-align: center;
-  /* background-image: url('../../images/header/header-bg-v2.png'); */
-  /* background-image: url('../../images/header/header-second-bg-large.png'); */
-  /* background-image: url('../../images/header/Безымянный1.png'); */
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,10 +20,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  /* background: linear-gradient(0deg, rgba(0, 56, 140, 0.3) 25%, rgba(0, 56, 140, 0.35) 80%, rgba(0, 56, 140, 0.4) 100%); */
-  /* background: linear-gradient(0deg, rgba(0, 102, 255, 0) 25%, rgba(0, 56, 140, 0.4) 80%, rgba(0, 0, 0, 0.7) 100%); */
+  background: var(--primary-color);
   background: linear-gradient(0deg, rgba(0, 56, 140, 0.15) 25%, rgba(0, 56, 140, 0.4) 80%, rgba(0, 56, 140, 0.5) 100%);
-  /* opacity: 0.5; */
   z-index: 1;
 }
 
