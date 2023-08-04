@@ -33,6 +33,8 @@ $(document).ready(function () {
   $('.videos2__slider').slick({
     ...defaultSliderSettings,
     arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   })
 })
 
@@ -104,16 +106,16 @@ select()
 
 /* image gallery */
 
-// const fancyboxOptions = {
-//   hideScrollbar: false,
-//   animated: false,
-//   contentClick: 'toggleZoom',
-//   groupAll: true,
-// }
+const fancyboxOptions = {
+  hideScrollbar: false,
+  animated: false,
+  contentClick: 'toggleZoom',
+  groupAll: true,
+}
 
-// Fancybox.bind('#gallery1 a', fancyboxOptions)
+Fancybox.bind('#gallery1 a', fancyboxOptions)
 
-// Fancybox.bind('#gallery2 a', fancyboxOptions)
+Fancybox.bind('#gallery2 a', fancyboxOptions)
 
 /* // image gallery */
 

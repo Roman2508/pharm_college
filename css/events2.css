@@ -108,27 +108,23 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 80px;
-  width: 80px;
+  padding: 30px;
   background-color: var(--primary-color);
   border: 0;
   font-size: 0;
   z-index: 1;
   cursor: pointer;
   text-align: center;
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
 }
 
 .events2__slider .slick-prev {
-  background-image: url('../images/icons/white-arrow-left.svg');
-  background-position: center;
-  background-size: 30px;
-  background-repeat: no-repeat;
+  background-image: url('../images/icons/sl-arrow_l.svg');
   left: 20px;
 }
 .events2__slider .slick-next {
-  background-image: url('../images/icons/white-arrow-right.svg');
-  background-position: center;
-  background-size: 30px;
-  background-repeat: no-repeat;
+  background-image: url('../images/icons/sl-arrow_r.svg');
   right: 20px;
 }
