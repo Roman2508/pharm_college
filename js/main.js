@@ -104,21 +104,6 @@ select()
 
 /* // select */
 
-/* image gallery */
-
-const fancyboxOptions = {
-  hideScrollbar: false,
-  animated: false,
-  contentClick: 'toggleZoom',
-  groupAll: true,
-}
-
-Fancybox.bind('#gallery1 a', fancyboxOptions)
-
-Fancybox.bind('#gallery2 a', fancyboxOptions)
-
-/* // image gallery */
-
 /* accordion */
 const accordionsArray = document.querySelectorAll('[data-accordion]')
 
@@ -255,3 +240,20 @@ function _slideToggle(target, duration = 500) {
   }
 }
 /* // accordion */
+
+//
+
+/* image gallery */
+if (Fancybox) {
+  const fancyboxOptions = {
+    hideScrollbar: false,
+    animated: false,
+    contentClick: 'toggleZoom',
+    groupAll: true,
+  }
+
+  Fancybox.bind('#gallery1 a', fancyboxOptions)
+
+  Fancybox.bind('#gallery2 a', fancyboxOptions)
+}
+/* // image gallery */
