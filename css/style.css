@@ -17,6 +17,7 @@
 @import './news-v2.css';
 @import './stats.css';
 @import './events2.css';
+@import './lib.css';
 
 @font-face {
   font-family: GilroyBold;
