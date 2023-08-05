@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/about/index.css" />
+    <link rel="stylesheet" href="../../css/components/table.css" />
+    <link rel="stylesheet" href="../../css/components/breadcrumbs.css" />
+    <link rel="stylesheet" href="../../css/components/accordion.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link rel="stylesheet" href="../../css/news/news.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper" id="scroll-top">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <a class="header__top-link" href="#">
+              <img src="../../images/icons/cloud-white.png" alt="cloud icon" />
+              <span>Вхід до хмари</span>
+            </a>
+            <a class="header__top-link" href="#">
+              <img src="../../images/icons/education-white.png" alt="education" />
+              <span>Дистанційне навчання</span>
+            </a>
+            <a class="header__top-link" href="#">
+              <span class="header__eng-icon">ENG</span>
+              <span>Zhytomyr College of Pharmacy</span>
+            </a>
+
+            <div class="social__wrapper">
+              <p>Приєднуйтесь:</p>
+              <ul class="social__list">
+                <li class="social__list-item">
+                  <a href="#">
+                    <img class="social__list-icon" src="../../images/icons/youtube-white.png" />
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img class="social__list-icon" src="../../images/icons/facebook-white.png" />
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img class="social__list-icon" src="../../images/icons/instagram-white.png" />
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img class="social__list-icon" src="../../images/icons/email-white.png" />
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img class="social__list-icon" src="../../images/icons/telegram-white.png" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <nav class="header__nav" id="header-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">Про ЖБФФК</a>
+              <span class="triangle"></span>
+              <ul class="header__nav-submenu">
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Про ЖБФФК</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Історія коледжу</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Контакти</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="/pages/about/administration.html">Адміністрація</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="/pages/about/teachers.html">Викладацький склад</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Матеріально-технічна база</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Гуртожиток</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Відео і 3D-панорами</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Відомі випускники коледжу</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Герб та гімн коледжу</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Структура</a>
+              <span class="triangle"></span>
+              <ul class="header__nav-submenu">
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Структура</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Відділення</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Підрозділи</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Циклові комісії</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item"><a href="#">Публічна інформація</a></li>
+            <li class="header__nav-item">
+              <a href="#">Освітній процес</a>
+              <span class="triangle"></span>
+              <ul class="header__nav-submenu">
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Освітній процес</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Освітньо-професійні програми</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Графік навчального процесу</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Ліцензування та акредитація</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Моніторинг якості освіти</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Науково-методична робота</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Педагогічна робота</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Виховна робота</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Цивільний захист</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Запобігання булінгу</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Практична підготовка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Студентам</a>
+              <span class="triangle"></span>
+              <ul class="header__nav-submenu">
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Студентам</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Крок М</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Прцевлаштування випускників</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Швидка студентська допомога</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Академічна доброчесність</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Вибіркові дисципліни (силабуси)</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Студентське наукове товариство ЖБФФК</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Студентське самоврядування</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item"><a href="#">Вступникам</a></li>
+            <li class="header__nav-item"><a href="#">Курси підвищення кваліфікації</a></li>
+            <li class="header__nav-item"><a href="#">Новини</a></li>
+            <li class="header__nav-item">
+              <a href="#">Розклад</a>
+              <span class="triangle"></span>
+              <ul class="header__nav-submenu">
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Розклад</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Група</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Викладач</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Розклад екзаменів</a>
+                </li>
+                <li class="header__nav-submenu-item">
+                  <a class="header__nav-submenu-link" href="#">Журнал відсутніх</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="sub-header">
+        <div class="sub-header__video">
+          <video poster="../../images/header/header-video-poster.jpg" autoplay muted loop playsinline>
+            <source src="../../videos/bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="container">
+          <div class="sub-header__inner">
+            <a class="sub-header__logo-box" href="/">
+              <img class="sub-header__logo" src="../../images/icons/logo-min.png" alt="logo" />
+              <!-- <img class="sub-header__logo" src="../../images/icons/logo.png" alt="logo" /> -->
+            </a>
+            <h1 class="sub-header__title">ЖИТОМИРСЬКИЙ БАЗОВИЙ ФАРМАЦЕВТИЧНИЙ ФАХОВИЙ КОЛЕДЖ</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__list">
+            <div class="breadcrumbs__item">Головна</div>
+            >
+            <div class="breadcrumbs__item">Новини</div>
+            >
+            <div class="breadcrumbs__item">2023</div>
+            >
+            <div class="breadcrumbs__item">06</div>
+            >
+            <div class="breadcrumbs__item">30</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page content -->
+
+      <div class="pt-80 pb-80">
+        <div class="container">
+          <div class="page-row">
+            <div class="col-2-12">
+              <div class="full-news__date ml-15 mr-15">
+                <div class="full-news__date-inner">
+                  <h6 class="full-news__day">30</h6>
+                  <p class="full-news__month">Липня</p>
+                  <p class="full-news__year">2023</p>
+                </div>
+
+                <div class="full-news__share">
+                  <p class="full-news__share-title">Поділитись:</p>
+                  <a href="#" class="full-news__share-social">
+                    <img src="../../images/icons/facebook-share.svg" alt="facebook" />
+                  </a>
+                  <a href="#" class="full-news__share-social">
+                    <img src="../../images/icons/whatsapp.svg" alt="whatsapp" />
+                  </a>
+                  <a href="#" class="full-news__share-social">
+                    <img src="../../images/icons/googleplus.svg" alt="googleplus" />
+                  </a>
+                  <a href="#" class="full-news__share-social">
+                    <img src="../../images/icons/twitter.svg" alt="twitter" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-7-12">
+              <h1 class="section-title mb-20 text-left">ВИПУСК 2023</h1>
+
+              <div class="full-news">
+                <div class="full-news__main-img">
+                  <img src="../../images/events/news-4.jpg" alt="news" />
+                </div>
+
+                <p class="block-text">
+                  30 червня Житомирський базовий фармацевтичний коледж урочисто вручав дипломи молодим фахівцям фармації
+                  та лабораторної діагностики. До привітань випускників долучились заступник голови обласної ради
+                  Володимир Ширма та директор Департаменту охорони здоров'я Олександр Торбас, зазначивши важливість
+                  фармацевтичних та медичних працівників у наступній відбудові держави та якісної професійної діяльності
+                  у забезпеченні збереження здоров'я усіх громадян України.
+                </p>
+                <p class="block-text">
+                  Директор коледжу, Ірина Бойчук, привітала випускників та побажала успішного професійного розвитку;
+                  висловила слова подяки викладацькому складу коледжу за багаторічну якісну підготовку майбутніх
+                  фахівців, які користуються пріоритетом на ринку праці.
+                </p>
+                <p class="block-text">
+                  Директор коледжу, Ірина Бойчук, привітала випускників та побажала успішного професійного розвитку;
+                  висловила слова подяки викладацькому складу коледжу за багаторічну якісну підготовку майбутніх
+                  фахівців, які користуються пріоритетом на ринку праці.
+                </p>
+                <p class="block-text">
+                  Особливо чуттєво прозвучав Гімн фармації у виконанні студентів коледжу, який уже багато років єднає
+                  усю фармацевтичну спільноту.
+                </p>
+                <p class="block-text">
+                  Яскраві концертні номери від артистів Житомирської обласної філармонії ім. Святослава Ріхтера стали
+                  чудовим доповненням до святкової атмосфери заходу. Дякуємо колективу філармонії за співпрацю в
+                  організації урочистої події.
+                </p>
+                <p class="block-text">
+                  <b>Більше фото </b>
+                  <a class="underlined-link" href="#">ТУТ</a>
+                </p>
+
+                <div class="full-post__gallery" id="gallery3">
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/events-1.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/events-1.jpg" alt="gallery" class="default-image" />
+                  </a>
+
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/events-2.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/events-2.jpg" alt="gallery" class="default-image" />
+                  </a>
+
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/events-3.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/events-3.jpg" alt="gallery" class="default-image" />
+                  </a>
+
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/news-1.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/news-1.jpg" alt="gallery" class="default-image" />
+                  </a>
+
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/news-2.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/news-2.jpg" alt="gallery" class="default-image" />
+                  </a>
+
+                  <a
+                    class="full-post__image-box col-4-12 pl-0 pr-0 scale-photo-hover hand-pointer"
+                    data-src="../../images/events/news-3.jpg"
+                    data-fancybox="gallery1"
+                  >
+                    <img src="../../images/events/news-3.jpg" alt="gallery" class="default-image" />
+                  </a>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+
+            <div class="col-3-12">
+              <div class="resent-news mb-40">
+                <h2 class="title-md mb-20">Попередні новини</h2>
+                <div class="resent-news__items">
+                  <!-- resent-news -->
+                  <div class="resent-news__item">
+                    <!-- <div class="resent-news__img">
+                      <img class="transition-03" src="../../images/events/news-1.jpg" alt="news-1" />
+                    </div> -->
+                    <div class="resent-news__content">
+                      <h4 class="resent-news__title font-bold font-size-20 mb-10">
+                        <span class="underline-animation"> До уваги вступників! </span>
+                      </h4>
+
+                      <p class="resent-news__date font-regular font-size-18">28 June 2023</p>
+                    </div>
+                  </div>
+
+                  <div class="resent-news__item">
+                    <!-- <div class="resent-news__img">
+                      <img class="transition-03" src="../../images/events/news-2.jpg" alt="news-1" />
+                    </div> -->
+                    <div class="resent-news__content">
+                      <h4 class="resent-news__title font-bold font-size-20 mb-10">
+                        <span class="underline-animation">
+                          Відбулося засідання з обговорення проєкту ОПП Фармація (ОПС фаховий молодший бакалавр)
+                        </span>
+                      </h4>
+
+                      <p class="resent-news__date font-regular font-size-18">28 June 2023</p>
+                    </div>
+                  </div>
+
+                  <div class="resent-news__item">
+                    <!-- <div class="resent-news__img">
+                      <img class="transition-03" src="../../images/events/news-3.jpg" alt="news-1" />
+                    </div> -->
+                    <div class="resent-news__content">
+                      <h4 class="resent-news__title font-bold font-size-20 mb-10">
+                        <span class="underline-animation">
+                          ПІДПИСАНО ДОГОВІР ПРО ПАРТНЕРСТВО З МЕРЕЖЕЮ АПТЕК БАЖАЄМО ЗДОРОВ'Я
+                        </span>
+                      </h4>
+                      <p class="resent-news__date font-regular font-size-18">28 June 2023</p>
+                    </div>
+                  </div>
+
+                  <div class="resent-news__item">
+                    <!-- <div class="resent-news__img">
+                      <img class="transition-03" src="../../images/events/news-4.jpg" alt="news-1" />
+                    </div> -->
+                    <div class="resent-news__content">
+                      <h4 class="resent-news__title font-bold font-size-20 mb-10">
+                        <span class="underline-animation"> Вибори голови ради студентського самоврядування </span>
+                      </h4>
+                      <p class="resent-news__date font-regular font-size-18">28 June 2023</p>
+                    </div>
+                  </div>
+
+                  <div class="resent-news__item">
+                    <!-- <div class="resent-news__img">
+                      <img class="transition-03" src="../../images/events/events.jpg" alt="news-1" />
+                    </div> -->
+                    <div class="resent-news__content">
+                      <h4 class="resent-news__title font-bold font-size-20 mb-10">
+                        <span class="underline-animation">
+                          Відбулося засідання з обговорення проєкту ОПП Фармація (ОПС фаховий молодший бакалавр)
+                        </span>
+                      </h4>
+                      <p class="resent-news__date font-regular font-size-18">28 June 2023</p>
+                    </div>
+                  </div>
+                  <!-- // resent-news -->
+                </div>
+              </div>
+
+              <h2 class="title-md mb-20">Архів новин</h2>
+
+              <div class="accordion-block" data-accordion>
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2013 (5)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2014 (8)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2015 (5)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2016 (15)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2017 (12)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2018 (15)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2019 (8)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2020 (5)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2021 (5)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2022 (6)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-title" tabindex="-1" data-accordion-item>2023 (9)</button>
+                  <div class="accordion-text">
+                    <ul class="bulleted-list">
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Березень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Квітень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Травень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Червень</a></li>
+                      <li class="bulleted-list-item"><a class="underlined-link" href="#">Липень</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- // page content -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__left-col">
+              <div class="footer__map">
+                <a href="#">
+                  <img src="../../images/footer/map.png" alt="map" />
+                </a>
+              </div>
+              <div class="footer__address">
+                <h6>ЖБФФК</h6>
+                <p>вул. Чуднівська, 99</p>
+                <p>м. Житомир</p>
+                <p>10005 Україна</p>
+              </div>
+            </div>
+
+            <a class="footer__logo" href="#">
+              <img src="../../images/icons/logo_white.svg" alt="logo" />
+              <!-- <img src="../../images/footer/blue-logo.png" alt="logo" /> -->
+            </a>
+
+            <div class="footer__right-col">
+              <div class="footer__contacts">
+                <a href="tel:0412242547">Тел.: (0412) 24-25-47</a>
+                <a href="tel:0412242545">Факс: (0412) 24-25-45</a>
+                <a href="mailto:college@pharm.zt.ua">college@pharm.zt.ua</a>
+              </div>
+
+              <div class="footer__social">
+                <ul class="social__list">
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="../../images/icons/youtube-white.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="../../images/icons/facebook-white.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="../../images/icons/instagram-white.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="../../images/icons/email-white.png" />
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="#">
+                      <img class="social__list-icon" src="../../images/icons/telegram-white.png" />
+                    </a>
+                  </li>
+                </ul>
+
+                <button class="footer__button">Задати питання</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+.full-news__date {
+  background-color: var(--gray-color);
+  padding: 10px;
+}
+
+.full-news__date-inner {
+  padding-top: 10px;
+  background-color: #fff;
+  font-family: GilroyBold, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.full-news__date-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--primary-color);
+}
+
+.full-news__day {
+  font-size: 40px;
+}
+.full-news__month {
+  font-size: 18px;
+}
+.full-news__year {
+  font-size: 18px;
+}
+
+.full-news__share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-news__share-title {
+  margin: 30px 10px 15px;
+  font-family: GilroyRegular, sans-serif;
+  font-size: 20px;
+}
+
+.full-news__share-social {
+  margin-bottom: 15px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.full-news__share-social:hover img {
+  transform: scale(1.1);
+}
+.full-news__share-social img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.full-news__main-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* resent news */
+
+.resent-news__item {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+  /* margin-bottom: 15px; */
+  cursor: pointer;
+}
+
+/* .resent-news__item:first-of-type {
+  border-top: 1px solid #d9d9d9;
+} */
+
+.resent-news__item:hover .resent-news__img img {
+  transform: scale(1.1);
+}
+.resent-news__item:hover .underline-animation {
+  background-size: 100% 100%;
+}
+
+.resent-news__img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.resent-news__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resent-news__title {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--light-black-color);
+}
+
+/* gallery */
+
+.full-post__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.full-post__image-box {
+  max-width: calc(33.333333% - 10px);
+  margin: 0 10px 10px 0;
+}
+
+.full-post__image-box img {
+  width: 100%;
+}

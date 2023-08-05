@@ -253,7 +253,7 @@ if (Fancybox) {
   }
 
   Fancybox.bind('#gallery1 a', fancyboxOptions)
-
   Fancybox.bind('#gallery2 a', fancyboxOptions)
+  Fancybox.bind('#gallery3 a', fancyboxOptions)
 }
 /* // image gallery */

@@ -117,18 +117,9 @@ body {
   flex-wrap: wrap;
 }
 
-.col-8-12 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-.col-4-12 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.col-1,
-.col-8,
-.col-3,
+.col-1-12,
+.col-8-12,
+.col-3-12,
 .col-8-12,
 .col-4-12 {
   position: relative;
@@ -138,17 +129,33 @@ body {
   padding-left: 15px;
 }
 
-.col-1 {
+.col-1-12 {
   flex: 0 0 8.33333%;
   max-width: 8.33333%;
 }
-.col-8 {
+.col-2-12 {
+  flex: 0 0 16.6666666%;
+  max-width: 16.6666666%;
+}
+.col-3-12 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-4-12 {
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+}
+.col-7-12 {
+  flex: 0 0 58.3333333%;
+  max-width: 58.3333333%;
+}
+.col-8-12 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
-.col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
+.col-9-12 {
+  flex: 0 0 75%;
+  max-width: 75%;
 }
 
 /* titles */
@@ -156,18 +163,21 @@ body {
 .title-lg {
   position: relative;
   font-size: 40px;
+  line-height: 1;
   color: var(--primary-color);
   font-family: GilroyBold, sans-serif;
 }
 .title-md {
   position: relative;
   font-size: 32px;
+  line-height: 1;
   color: var(--primary-color);
   font-family: GilroyBold, sans-serif;
 }
 .title-sm {
   position: relative;
   font-size: 24px;
+  line-height: 1;
   color: var(--primary-color);
   font-family: GilroyBold, sans-serif;
 }
@@ -186,6 +196,7 @@ body {
 
 .scale-photo-hover {
   position: relative;
+  overflow: hidden;
 }
 
 .scale-photo-hover img {
@@ -198,6 +209,7 @@ body {
 }
 
 .scale-photo-hover::after {
+  cursor: pointer;
   position: absolute;
   content: '';
   width: 100%;
@@ -210,6 +222,7 @@ body {
 }
 
 .scale-photo-hover::before {
+  cursor: pointer;
   position: absolute;
   content: '';
   width: 32px;

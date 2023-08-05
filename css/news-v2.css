@@ -8,13 +8,13 @@
 
 .news2__items {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
 }
 .news2__item {
-  width: calc(33.33333% - 20px);
+  max-width: calc(33.33333% - 20px);
   /* width: calc(25% - 20px); */
-  margin: 0 20px;
-  /* margin: 0 10px; */
+  margin: 0 10px 20px;
   background-color: #f2f4fd;
   cursor: pointer;
 }
