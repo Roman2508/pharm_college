@@ -289,16 +289,16 @@ new Swiper('.swiper', {
 /* // slider swiper */
 
 /* image gallery */
-// if (Fancybox) {
-//   const fancyboxOptions = {
-//     hideScrollbar: false,
-//     animated: false,
-//     contentClick: 'toggleZoom',
-//     groupAll: true,
-//   }
+if (Fancybox) {
+  const fancyboxOptions = {
+    hideScrollbar: false,
+    animated: false,
+    contentClick: 'toggleZoom',
+    groupAll: true,
+  }
 
-//   Fancybox.bind('#gallery1 a', fancyboxOptions)
-//   Fancybox.bind('#gallery2 a', fancyboxOptions)
-//   Fancybox.bind('#gallery3 a', fancyboxOptions)
-// }
+  Fancybox.bind('#gallery1 a', fancyboxOptions)
+  Fancybox.bind('#gallery2 a', fancyboxOptions)
+  Fancybox.bind('#gallery3 a', fancyboxOptions)
+}
 /* // image gallery */
