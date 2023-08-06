@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="./css/components/swiper.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -495,10 +497,10 @@
         </div>
       </div> -->
 
-      <div class="events2">
+      <div class="events2 swiper">
         <!-- <div class="container"> -->
-        <div class="events2__slider">
-          <div class="events2__slider-item">
+        <div class="events2__slider swiper-wrapper">
+          <div class="swiper-slide events2__slider-item">
             <div class="events2__slider-item-inner">
               <div class="events2__slider-img-box">
                 <img src="./images/events/events-1.jpg" alt="slider photo" />
@@ -510,7 +512,7 @@
             </div>
           </div>
 
-          <div class="events2__slider-item">
+          <div class="swiper-slide events2__slider-item">
             <div class="events2__slider-item-inner">
               <div class="events2__slider-img-box">
                 <img src="./images/events/events-2.jpg" alt="slider photo" />
@@ -522,7 +524,7 @@
             </div>
           </div>
 
-          <div class="events2__slider-item">
+          <div class="swiper-slide events2__slider-item">
             <div class="events2__slider-item-inner">
               <div class="events2__slider-img-box">
                 <img src="./images/events/events-3.jpg" alt="slider photo" />
@@ -534,9 +536,38 @@
             </div>
           </div>
 
+          <div class="swiper-slide events2__slider-item">
+            <div class="events2__slider-item-inner">
+              <div class="events2__slider-img-box">
+                <img src="./images/events/events-2.jpg" alt="slider photo" />
+              </div>
+              <div class="events2__slider-content">
+                <div class="events2__slider-date">Середа, 28 червня 2023</div>
+                <h5 class="events2__slider-title">З ДНЕМ КОНСТИТУЦІЇ УКРАЇНИ</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide events2__slider-item">
+            <div class="events2__slider-item-inner">
+              <div class="events2__slider-img-box">
+                <img src="./images/events/events-2.jpg" alt="slider photo" />
+              </div>
+              <div class="events2__slider-content">
+                <div class="events2__slider-date">Середа, 28 червня 2023</div>
+                <h5 class="events2__slider-title">З ДНЕМ КОНСТИТУЦІЇ УКРАЇНИ</h5>
+              </div>
+            </div>
+          </div>
+
           <!-- events2__slider-item -->
           <!-- </div> -->
         </div>
+
+        <!-- slider buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- // slider buttons -->
       </div>
 
       <!-- <div class="news overhung-rectangle rectangle-gray">
@@ -826,7 +857,7 @@
         </div>
       </div> -->
 
-      <div class="videos2">
+      <!-- <div class="videos2">
         <h2 class="section-title videos2__title">Відео</h2>
         <div class="videos2__slider">
           <div class="videos2__slider-item">
@@ -856,6 +887,51 @@
               <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
             </div>
           </div>
+        </div>
+      </div> -->
+
+      <div class="videos2">
+        <h2 class="section-title videos2__title">Відео</h2>
+        <div class="videos2__slider">
+          <div class="videos2__slider-container swiper-wrapper">
+            <div class="videos2__slider-item swiper-slide">
+              <div class="videos2__slider-inner" style="background-image: url(./images/videos/teacher-day.jpg)">
+                <h3 class="videos2__slider-title">Фарм Коледж - День Вчителя</h3>
+                <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
+              </div>
+            </div>
+
+            <div class="videos2__slider-item swiper-slide">
+              <div class="videos2__slider-inner" style="background-image: url(./images/videos/video-5.jpg)">
+                <h3 class="videos2__slider-title">ЖБФК запрошує на навчання</h3>
+                <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
+              </div>
+            </div>
+
+            <div class="videos2__slider-item swiper-slide">
+              <div class="videos2__slider-inner" style="background-image: url(./images/videos/video-4.png)">
+                <h3 class="videos2__slider-title">Наш коледж</h3>
+                <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
+              </div>
+            </div>
+
+            <div class="videos2__slider-item swiper-slide">
+              <div class="videos2__slider-inner" style="background-image: url(./images/videos/about_pharmasy.jpg)">
+                <h3 class="videos2__slider-title">Про фармацію</h3>
+                <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
+              </div>
+            </div>
+
+            <div class="videos2__slider-item swiper-slide">
+              <div class="videos2__slider-inner" style="background-image: url(./images/videos/video-4.png)">
+                <h3 class="videos2__slider-title">Наш коледж</h3>
+                <img class="videos2__slider-play" src="./images/icons/play-blue.svg" alt="video-bg" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -1042,6 +1118,9 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
+
+    <script src="./js/swiper.min.js"></script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

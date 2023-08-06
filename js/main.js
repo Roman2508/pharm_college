@@ -8,34 +8,34 @@ $(document).ready(function () {
   }
 
   /* events slider */
-  $('.events__slider').slick({
-    ...defaultSliderSettings,
-    arrows: true,
-  })
+  // $('.events__slider').slick({
+  //   ...defaultSliderSettings,
+  //   arrows: true,
+  // })
 
   /* events2 slider */
-  $('.events2__slider').slick({
-    ...defaultSliderSettings,
-    arrows: true,
-  })
+  // $('.events2__slider').slick({
+  //   ...defaultSliderSettings,
+  //   arrows: true,
+  // })
 
   /* videos slider */
-  $('.videos__slider-box').slick({
-    ...defaultSliderSettings,
-    fade: true,
-    dots: true,
-    dotsClass: 'videos__slider-dost',
-    customPaging: function (slider, i) {
-      return i + 1 + '/' + slider.slideCount
-    },
-  })
+  // $('.videos__slider-box').slick({
+  //   ...defaultSliderSettings,
+  //   fade: true,
+  //   dots: true,
+  //   dotsClass: 'videos__slider-dost',
+  //   customPaging: function (slider, i) {
+  //     return i + 1 + '/' + slider.slideCount
+  //   },
+  // })
 
-  $('.videos2__slider').slick({
-    ...defaultSliderSettings,
-    arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  })
+  // $('.videos2__slider').slick({
+  //   ...defaultSliderSettings,
+  //   arrows: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  // })
 })
 
 const headerEl = document.getElementById('header-nav')
@@ -243,17 +243,62 @@ function _slideToggle(target, duration = 500) {
 
 //
 
-/* image gallery */
-if (Fancybox) {
-  const fancyboxOptions = {
-    hideScrollbar: false,
-    animated: false,
-    contentClick: 'toggleZoom',
-    groupAll: true,
-  }
+/* slider swiper */
+// const swiper1 = document.querySelector('.events2')
+// const swiperSlider1 = new Swiper(swiper1, {
+//   centeredSlides: true,
+//   slidesPerView: 'auto',
+//   loop: true,
+//   spaceBetween: 100,
+// })
 
-  Fancybox.bind('#gallery1 a', fancyboxOptions)
-  Fancybox.bind('#gallery2 a', fancyboxOptions)
-  Fancybox.bind('#gallery3 a', fancyboxOptions)
+const swiperParams = {
+  loop: true,
+  speed: 800,
+  centeredSlides: true,
+  spaceBetween: 50,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
 }
+
+new Swiper('.videos2__slider', {
+  ...swiperParams,
+  spaceBetween: 80,
+})
+
+new Swiper('.swiper', {
+  ...swiperParams,
+  // loopedSlides: 10,
+  // effect: 'coverflow',
+  // grabCursor: true,
+
+  // spaceBetween: 80,
+
+  // coverflowEffect: {
+  //   rotate: 0,
+  //   stretch: 0,
+  // },
+})
+
+/* // slider swiper */
+
+/* image gallery */
+// if (Fancybox) {
+//   const fancyboxOptions = {
+//     hideScrollbar: false,
+//     animated: false,
+//     contentClick: 'toggleZoom',
+//     groupAll: true,
+//   }
+
+//   Fancybox.bind('#gallery1 a', fancyboxOptions)
+//   Fancybox.bind('#gallery2 a', fancyboxOptions)
+//   Fancybox.bind('#gallery3 a', fancyboxOptions)
+// }
 /* // image gallery */

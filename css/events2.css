@@ -8,16 +8,20 @@
 }
 
 .events2__slider-item {
-  min-width: 0;
-  display: flex;
+  display: flex !important;
   justify-content: center;
+
+  /* min-height: 551px; */
+  /* width: 890px; */
 }
 
 .events2__slider-item-inner {
   cursor: pointer;
   position: relative;
-  max-width: 770px;
-  max-height: 450px;
+  max-width: 600px;
+  max-height: 400px;
+  /* max-width: 770px; */
+  /* max-height: 450px; */
 }
 
 .events2__slider-item-inner:hover .events2__slider-content::before {
@@ -31,7 +35,7 @@
 
 .events2__slider-item-inner:hover .events2__slider-img-box img {
   transform: scale(1.05);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .events2__slider-img-box {
@@ -50,9 +54,9 @@
 .events2__slider-content {
   position: absolute;
   left: 0;
-  bottom: -40px;
+  bottom: 0;
   background-color: #fff;
-  width: calc(100% - 250px);
+  max-width: calc(100% - 150px);
   padding: 20px 50px 20px 20px;
   color: var(--primary-color);
 }
@@ -87,7 +91,8 @@
 
 .events2__slider-title {
   font-family: 'GilroyBold', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 1.1;
 }
 
 /* slider */
@@ -127,4 +132,55 @@
 .events2__slider .slick-next {
   background-image: url('../images/icons/sl-arrow_r.svg');
   right: 20px;
+}
+
+/* swiper */
+.events2 {
+  overflow: inherit !important;
+  width: 100%;
+  position: relative;
+}
+.events2::before,
+.events2::after {
+  content: '';
+  position: absolute;
+  top: -15%;
+  height: 100%;
+  width: 20%;
+  z-index: 2;
+}
+
+.events2::before {
+  left: 0;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 50px, rgba(255, 255, 255, 0) 100%);
+}
+.events2::after {
+  right: 0;
+  background: linear-gradient(270deg, rgb(255, 255, 255) 50px, rgba(255, 255, 255, 0) 100%);
+}
+
+.events2__slider .swiper-slide {
+  /* width: auto; */
+  width: 670px;
+  min-height: 500px;
+  transition: all 0.5s ease-in-out;
+}
+
+.events2 .swiper-slide-active {
+  transform: scale(1.2) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 5;
+  background-color: var(--primary-color);
+  padding: 30px;
+  top: 35% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  font-size: 24px !important;
 }

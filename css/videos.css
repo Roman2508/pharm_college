@@ -185,26 +185,24 @@
   margin-bottom: 80px;
 }
 
-.videos2::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 20%;
-  background: linear-gradient(270deg, rgb(255, 255, 255) 50px, rgba(255, 255, 255, 0) 100%);
-  z-index: 1;
-}
-
+.videos2::after,
 .videos2::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 12%;
   height: 100%;
   width: 20%;
+  z-index: 2;
+}
+
+.videos2::after {
+  right: 0;
+  background: linear-gradient(270deg, rgb(255, 255, 255) 50px, rgba(255, 255, 255, 0) 100%);
+}
+
+.videos2::before {
+  left: 0;
   background: linear-gradient(90deg, rgb(255, 255, 255) 50px, rgba(255, 255, 255, 0) 100%);
-  z-index: 1;
 }
 
 .videos2__slider {
@@ -213,10 +211,10 @@
 
 .videos2__slider-item {
   min-width: 0;
-  margin: 0 40px;
+  /* margin: 0 40px; */
 }
 
-.videos2__slider-item.slick-active.slick-current + div .videos2__slider-inner {
+/* .videos2__slider-item.slick-active.slick-current + div .videos2__slider-inner {
   transform: scale(1.2);
 }
 .videos2__slider-item.slick-active.slick-current + div .videos2__slider-play {
@@ -225,7 +223,7 @@
 
 .videos2__slider-item.slick-active.slick-current + div .videos2__slider-title {
   bottom: 5%;
-}
+} */
 
 .videos2__slider-inner {
   width: 100%;
@@ -272,12 +270,13 @@
 
 .videos2__slider-play {
   cursor: pointer;
-  transition: all 0.7s ease-in-out;
+  transition: top 0.7s ease-in-out, transform 0.3s ease-in-out;
   position: absolute;
   transform: translate(-50%, -50%);
   width: 80px;
   top: -20%;
-  left: 15%;
+  left: 10%;
+  /* left: 15%; */
 }
 
 .videos2__slider-play:hover {
@@ -320,3 +319,30 @@
   background-image: url('../images/icons/sl-arrow_r.svg');
   right: 20px;
 }
+
+/* swiper */
+.videos2__slider .swiper-slide {
+  transition: all 0.5s ease-in-out;
+}
+
+.videos2__slider .swiper-slide-active {
+  transform: scale(1.1) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-slide-active .videos2__slider-play {
+  top: 15%;
+}
+.swiper-slide-active .videos2__slider-title {
+  bottom: 5%;
+}
+
+.videos2 .swiper-button-prev,
+.videos2 .swiper-button-next {
+  z-index: 5;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+/* // swiper */

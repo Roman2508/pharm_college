@@ -59,6 +59,8 @@
 .main-slider__logo {
   width: 180px;
   /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9); */
+  -webkit-filter: drop-shadow(0 0 0 #000000);
+  filter: drop-shadow(0 0 0 #000000);
 }
 
 .main-slider__title {

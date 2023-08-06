@@ -27,6 +27,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.footer__map {
+  -webkit-filter: drop-shadow(0 0 0 #fff);
+  filter: drop-shadow(0 0 0 #fff);
+}
+
 .footer__map img:hover,
 .footer__logo img:hover {
   transform: scale(1.1);
