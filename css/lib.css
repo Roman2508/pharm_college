@@ -27,6 +27,9 @@
 .mt-80 {
   margin-top: 80px;
 }
+.mt-90 {
+  margin-top: 90px;
+}
 .mt-100 {
   margin-top: 100px;
 }
@@ -97,6 +100,9 @@
 .mb-80 {
   margin-bottom: 80px;
 }
+.mb-90 {
+  margin-bottom: 90px;
+}
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -131,6 +137,9 @@
 }
 .ml-80 {
   margin-left: 80px;
+}
+.ml-90 {
+  margin-left: 90px;
 }
 .ml-100 {
   margin-left: 100px;
