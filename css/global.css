@@ -311,3 +311,55 @@ body {
   width: 600px;
   height: 300px;
 } */
+
+/* #preloader {
+  position: relative;
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-fill-mode: forwards;
+}
+
+.load {
+  animation: on-load 0.3s linear;
+}
+
+
+#preloader__logo {
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  z-index: 9999;
+  background-image: url('../images/icons/logo_white.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: preloader 3s linear infinite;
+}
+
+@keyframes on-load {
+  from {
+    transform: scale(1);
+    border-radius: 0;
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes preloader {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+} */

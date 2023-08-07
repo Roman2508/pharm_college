@@ -47,7 +47,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px); */
 }
 
 .main-slider video {

@@ -77,6 +77,13 @@ window.addEventListener('scroll', function (e) {
   }
 })
 
+// window.addEventListener('load', function () {
+//   const preloader = document.getElementById('preloader')
+
+//   preloader.classList.add('load')
+//   // preloader.style.display = 'none'
+// })
+
 /* select */
 
 const select = function () {
@@ -264,6 +271,21 @@ const swiperParams = {
   },
   // autoplay: {
   //   delay: 5000,
+  // },
+
+  // breakpoints: {
+  //   640: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //   },
+  //   768: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 40,
+  //   },
+  //   1024: {
+  //     slidesPerView: 5,
+  //     spaceBetween: 50,
+  //   },
   // },
 }
 
