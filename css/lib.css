@@ -1,4 +1,7 @@
 /* margin */
+.m-0-a {
+  margin: 0 auto;
+}
 /* top */
 .mt-0 {
   margin-top: 0;
@@ -356,6 +359,10 @@
 
 .color-primary {
   color: var(--primary-color);
+}
+
+.color-white {
+  color: #ffffff;
 }
 
 /* font-size */

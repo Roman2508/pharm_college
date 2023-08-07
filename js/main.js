@@ -267,13 +267,11 @@ const swiperParams = {
   // },
 }
 
-new Swiper('.videos2__slider', {
-  ...swiperParams,
-  spaceBetween: 80,
-})
-
 new Swiper('.swiper', {
   ...swiperParams,
+  // centeredSlides: false,
+  slidesPerView: 2.2,
+  loop: false,
   // loopedSlides: 10,
   // effect: 'coverflow',
   // grabCursor: true,
@@ -284,6 +282,23 @@ new Swiper('.swiper', {
   //   rotate: 0,
   //   stretch: 0,
   // },
+})
+
+new Swiper('.videos2__slider', {
+  ...swiperParams,
+})
+
+new Swiper('.warning__content', {
+  loop: true,
+  spaceBetween: 80,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 })
 
 /* // slider swiper */

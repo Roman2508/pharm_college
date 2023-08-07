@@ -111,10 +111,10 @@
 .header__nav-item:hover ::after {
   transform: scaleX(1);
 }
-
+/* 
 .header__nav-item:last-of-type {
   margin-right: 20px;
-}
+} */
 
 .header__nav-item {
   margin: 20px 0;
@@ -139,8 +139,7 @@
 .header__nav-submenu {
   position: absolute;
   background-color: #fff;
-  border-radius: 20px;
-  /* box-shadow: 0 0 30px 0 hsla(228, 6%, 84%, 0.42); */
+  border-radius: 10px;
   box-shadow: -10px 10px 30px 0 hsla(228, 6%, 84%, 0.7);
   padding: 8px 0;
   width: 360px;
@@ -151,9 +150,29 @@
   transform: rotateX(-90deg);
   opacity: 0;
 
-  max-height: 400px;
-  overflow-y: auto;
+  /* max-height: 400px; */
+  /* overflow: auto; */
+  /* overflow-x: hidden; */
 }
+
+.header__nav-submenu .header__nav-submenu {
+  position: absolute;
+  left: 101%;
+  top: -8px;
+}
+
+.header__nav-submenu .header__nav-submenu {
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  opacity: 0;
+}
+
+.header__nav-submenu-item:hover .header__nav-submenu {
+  transform: rotateX(0);
+  opacity: 1;
+}
+
+/* .header__nav-submenu-item */
 
 .header__nav-submenu::-webkit-scrollbar {
   background-color: transparent;
@@ -168,18 +187,15 @@
   right: -20px;
 }
 
-.header__nav-item:hover .header__nav-submenu,
-.header__nav-submenu:hover {
+.header__nav-item:hover > .header__nav-submenu {
   transform: rotateX(0);
   opacity: 1;
-  /* display: block; */
 }
 
 .header__nav-submenu-item {
   cursor: pointer;
   color: #000;
   display: flex;
-  /* align-items: flex-start; */
   align-items: center;
   justify-content: start;
   font-weight: 500;
@@ -206,4 +222,18 @@
   /* right: -18px; */
   border: 7px solid transparent;
   border-top-color: #ffffff;
+}
+
+.submenu-triangle {
+  position: relative;
+}
+
+.submenu-triangle::after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  border: 7px solid transparent;
+  border-left-color: #000000;
+  /* transform: rotate(-90deg); */
 }

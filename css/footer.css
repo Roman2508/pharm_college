@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   background-color: var(--primary-color);
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   z-index: 1;
 }
 
@@ -15,6 +15,11 @@
 .footer__right-col {
   display: flex;
   align-items: center;
+  flex: 1;
+}
+
+.footer__right-col {
+  justify-content: end;
 }
 
 .footer__map {
@@ -91,4 +96,12 @@
 .footer__button:hover {
   background-color: #ffffff;
   color: var(--primary-color);
+}
+
+.footer__copyright {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
 }

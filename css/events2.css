@@ -171,8 +171,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.events2 .swiper-button-next,
+.events2 .swiper-button-prev {
   z-index: 5;
   background-color: var(--primary-color);
   padding: 30px;
