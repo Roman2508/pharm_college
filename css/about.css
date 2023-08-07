@@ -4,10 +4,22 @@
 
 .about__wrapper {
   display: flex;
-  gap: 50px;
+  /* gap: 40px; */
+  align-items: flex-end;
+}
+
+.about__content {
+  max-width: 55%;
+  margin-right: 40px;
+}
+
+.about__image {
+  max-width: 45%;
 }
 
 .about__image img {
+  object-fit: cover;
+  width: 100%;
   max-width: 720px;
   border-radius: 20px;
 }
@@ -39,5 +51,24 @@
 }
 
 .about__content p + p {
+  margin-top: 15px;
+}
+
+.about__button {
   margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primary-color);
+  font-family: GilroyBold, sans-serif;
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 12px 33px 15px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.about__button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }

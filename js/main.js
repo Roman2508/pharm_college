@@ -299,6 +299,10 @@ new Swiper('.warning__content', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
 })
 
 /* // slider swiper */

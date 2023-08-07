@@ -150,14 +150,22 @@
   transform: rotateX(-90deg);
   opacity: 0;
 
-  /* max-height: 400px; */
   /* overflow: auto; */
-  /* overflow-x: hidden; */
+}
+.header__nav-submenu-nested {
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .header__nav-submenu .header__nav-submenu {
   position: absolute;
   left: 101%;
+  top: -8px;
+}
+.header__nav-submenu .header__nav-submenu.header__nav-submenu-reverse {
+  position: absolute;
+  right: 101% !important;
+  left: auto;
   top: -8px;
 }
 

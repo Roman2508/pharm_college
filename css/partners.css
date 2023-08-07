@@ -78,19 +78,14 @@
 /*  */
 /*  */
 /*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
 .partners__items-wrap {
   position: relative;
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: 20px;
+  width: 95%;
+  margin: 0 auto 10px;
 }
 .partners__items-wrap:before,
 .partners__items-wrap:after {
@@ -110,13 +105,12 @@
   right: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 }
-.items {
+.partners__items {
   flex-shrink: 0;
   display: flex;
   gap: 20px;
   justify-content: space-around;
   min-width: 100%;
-  /* margin: 10px 0; */
 }
 .item {
   flex: 0 0 auto;

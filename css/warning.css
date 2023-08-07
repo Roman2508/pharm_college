@@ -47,3 +47,13 @@
 .warning__content .swiper-button-next {
   right: 20px;
 }
+
+.warning__content .swiper-pagination {
+  position: absolute;
+  font-family: GilroyBold, sans-serif;
+  font-size: 20px;
+  right: 70px;
+  left: auto;
+  width: 50px;
+  top: 15px;
+}
